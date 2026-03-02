@@ -1,0 +1,68 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <title>Hoch Heart Tracker</title>
+    <audio loop id="bgm">
+        <source src="audio/bgm.mp3" type="audio/mp3">
+    </audio>
+    <audio id="boop">
+        <source src="audio/boop.mp3" type="audio/mp3">
+    </audio>
+    <audio id="title-sparkle">
+        <source src="audio/title_sparkle.mp3" type="audio/mp3">
+    </audio>
+    <audio id="quack">
+        <source src="audio/duck.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        function musicClick() {
+            if (document.getElementById('bgm').paused) {
+                document.getElementById('music_icon').src = "imgs/music/music_icon.png";
+                document.getElementById('bgm').play();
+            } else {
+                document.getElementById('music_icon').src = "imgs/music/no_music_icon.png";
+                document.getElementById('bgm').pause();
+            }
+        }
+    </script>
+</head>
+    <body>
+        <header>
+            <h1 class="center" onclick="document.getElementById('boop').play();">Hoch Heart Tracker</h1>
+        </header>
+        <main>
+            <div class="center top-align">
+                <div class="vertical-stack">
+                    <img src="imgs/pfp/jade.JPEG" alt="Jade smiling with cute white press-on nails displayed." class="pfp" onclick="document.getElementById('quack').play();">
+                </div>
+                <div class="vertical-stack">
+                    <img src="imgs/pfp/nae.JPEG" alt="Nae in a South hoodie in Platt looking upward while on her laptop" class="pfp nae" onclick="document.getElementById('quack').play();">
+                    <img src ="imgs/hearts/ryan_heart.png" alt="Yellow pixel candy heart with an R" class="heart" onclick="document.getElementById('boop').play();">
+                    <img src ="imgs/hearts/sarah_heart.png" alt="Pink pixel candy heart with an S" class="heart" onclick="document.getElementById('boop').play();">
+                    <img src ="imgs/hearts/lydia_heart.png" alt="Green pixel candy heart with an L" class="heart" onclick="document.getElementById('boop').play();">
+                    <img src ="imgs/hearts/jade_heart.png" alt="Orange pixel candy heart with a J" class="heart" onclick="document.getElementById('boop').play();">
+                </div>
+                <div class="vertical-stack">
+                    <img src="imgs/pfp/ally.JPEG" alt="Ally smiling and waving like a seal on a rock at the Portland arboretum" class="pfp" onclick="document.getElementById('quack').play();">
+                </div>
+                <div class="vertical-stack">
+                    <img src="imgs/pfp/sarah.JPEG" alt="Sarah turns with to look at the camera with wide eyes" class="pfp" onclick="document.getElementById('quack').play();">
+                    <img src ="imgs/hearts/ally_heart.png" alt="Purple pixel candy heart with an A" class="heart" onclick="document.getElementById('boop').play();">
+                    <img src ="imgs/hearts/nae_heart.png" alt="Nae pixel candy heart with an N" class="heart" onclick="document.getElementById('boop').play();">
+                </div>
+                <div class="vertical-stack">
+                    <img src="imgs/pfp/lydia.JPEG" alt="Lydia blowing upward with a warm jacket" class="pfp" onclick="document.getElementById('quack').play();"> 
+                </div>
+                <div class="vertical-stack">
+                    <img src="imgs/pfp/ryan.JPEG" alt="Ryan poses and smiles at the Hoyt Arboretum" class="pfp" onclick="document.getElementById('quack').play();">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="imgs/music/no_music_icon.png" alt="Pixel music note crossed out" class="music" id="music_icon" onclick="musicClick()"> 
+        </footer>
+    </body>
+</html>

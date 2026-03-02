@@ -1,0 +1,81 @@
+body {
+    background-color: #ecffe5;
+    height: 97%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    cursor:url("imgs/cursors/cursor.png"), auto;
+}
+
+h1 {
+    color: #331a00;
+    font-family: "Pinyon Script";
+    font-size: 7vw;
+    margin: 10px 20px;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1 0 auto;
+    align-items: center;
+    cursor:url("imgs/cursors/cursor.png"), auto;
+}
+
+footer {
+    flex-shrink: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+}
+
+.pfp {
+    min-width:50px;
+    max-width:200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 25px;
+}
+
+.heart {
+    width: 51px;
+    height: 45px;
+    margin: 5px;
+}
+
+.music {
+    max-width: 60px;
+    height: auto;
+}
+
+.nae {
+    cursor: url("imgs/cursors/blm_cursor.png"), url("imgs/cursors/cursor.png"), auto;
+}
+
+.pinyon-script-regular {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-stack {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-align {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
